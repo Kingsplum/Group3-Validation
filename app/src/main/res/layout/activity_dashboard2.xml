@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_bg"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_container">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dashboard1RelativeLayout1"
+            android:gravity="center">
+
+            <ImageView
+                android:src="@drawable/user2"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:padding="2dp"
+                android:background="@drawable/white"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:background="@drawable/gradient1"
+            android:layout_below="@id/dashboard1RelativeLayout1"
+            android:layout_marginTop="10dp"
+            android:paddingRight="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/name_container">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Name :"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/dashboard1TextView1"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:typeface="serif"
+                    android:textColor="#FFFFFF"/>
+
+                <View
+                    android:background="?android:attr/dividerVertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_toRightOf="@id/dashboard1TextView1"
+                    android:layout_alignParentBottom="true"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="JOHN VINCENT MICU"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_toRightOf="@id/dashboard1TextView1"
+                    android:gravity="center"
+                    android:typeface="serif"
+                    android:textColor="#FFFFFF"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/id_container"
+                android:layout_below="@id/name_container">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="ID no. :"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/dashboard1TextView1"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:typeface="serif"
+                    android:textColor="#FFFBFB"
+                    tools:ignore="DuplicateIds" />
+
+                <View
+                    android:background="?android:attr/dividerVertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_toRightOf="@id/dashboard1TextView1"
+                    android:layout_alignParentBottom="true"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="20193927"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_toRightOf="@id/dashboard1TextView1"
+                    android:gravity="center"
+                    android:typeface="serif"
+                    android:textColor="#FFFBFB"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_container"
+                android:layout_below="@id/id_container"
+                android:gravity="center">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_height="wrap_content"
+                    android:text="logout"
+                    android:background="@drawable/button_bg"
+                    android:id="@+id/logoutBtn"
+                    android:padding="10dp"
+                    android:layout_marginTop="30dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="5dp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
